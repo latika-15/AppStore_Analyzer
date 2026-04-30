@@ -42,7 +42,8 @@ st.markdown("""
 .kpi h2 { margin: 0; font-size: 30px; }
 .kpi p { margin: 0; opacity: 0.85; }
 </style>
-""", unsafe_allow_html=True)
+"""
+, unsafe_allow_html=True)
 
 # ------------------ KPIs ------------------
 total_reviews = len(filtered)
@@ -132,3 +133,91 @@ with tab3:
 
         fig8 = px.bar(top_words, x="word", y="count", title="Top Keywords")
         st.plotly_chart(fig8, use_container_width=True)
+
+
+st.markdown("""
+## 📌 Project Overview
+
+This project is an **end-to-end App Review Analytics System** designed to transform raw user reviews into actionable insights for product improvement.
+
+---
+
+### 🎯 Objective
+To analyze Play Store reviews and extract:
+- User sentiment (Positive, Negative, Neutral)
+- Key complaints (Bug, Performance, UI/UX, Network)
+- Feature requests and user expectations
+- Trends over time across multiple apps
+
+---
+
+### 🛠️ How It Was Built
+
+#### 🔹 Data Collection
+- Scraped real-world reviews using `google-play-scraper`
+- Collected data for:
+  - Instagram  
+  - WhatsApp  
+  - Snapchat  
+
+#### 🔹 Data Processing
+- Cleaned text (removed noise, links, symbols)
+- Applied NLP preprocessing:
+  - Tokenization
+  - Lemmatization (using spaCy)
+
+#### 🔹 Feature Engineering
+- Sentiment analysis using TextBlob
+- Complaint classification using rule-based NLP
+- Feature request detection using keyword logic
+- TF-IDF for extracting important words
+
+#### 🔹 Analytics & Dashboard
+- Built interactive dashboards in:
+  - **Power BI** (for business insights)
+  - **Streamlit** (for web deployment)
+
+#### 🔹 Key KPIs Created
+- Satisfaction Score (NPS-style)
+- Complaint Rate (based on negative sentiment)
+- Bug & Performance Issue %
+- Feature Request %
+- Top Keywords (user demand insights)
+
+---
+
+### 📊 Key Insights
+
+- Majority of users are **satisfied**, but:
+  - Bug and performance issues are dominant complaints  
+- Significant number of users request new features  
+- Feature demand is highest for certain apps (e.g., Instagram)  
+- Keywords like *“update”, “add”, “fix”* highlight user expectations  
+
+---
+
+### 💡 Business Impact
+
+This system helps:
+- Identify critical product issues  
+- Prioritize feature development  
+- Improve user satisfaction  
+- Support data-driven decision making  
+
+---
+
+### 🚀 Tech Stack
+
+- **Python** (Pandas, NLP)
+- **Streamlit** (Web App)
+- **Power BI** (Dashboard)
+- **Plotly** (Visualization)
+
+---
+
+### 👨‍💻 Final Outcome
+
+An **end-to-end analytics solution** that converts unstructured user feedback into meaningful product insights and interactive dashboards.
+
+---
+""")
