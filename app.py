@@ -136,13 +136,13 @@ with tab3:
 
 
 st.markdown("""
-## 📌 Project Overview
+## Project Overview
 
 This project is an **end-to-end App Review Analytics System** designed to transform raw user reviews into actionable insights for product improvement.
 
 ---
 
-### 🎯 Objective
+### Objective
 To analyze Play Store reviews and extract:
 - User sentiment (Positive, Negative, Neutral)
 - Key complaints (Bug, Performance, UI/UX, Network)
@@ -151,33 +151,33 @@ To analyze Play Store reviews and extract:
 
 ---
 
-### 🛠️ How It Was Built
+### How It Was Built
 
-#### 🔹 Data Collection
+#### 1. Data Collection
 - Scraped real-world reviews using `google-play-scraper`
 - Collected data for:
   - Instagram  
   - WhatsApp  
   - Snapchat  
 
-#### 🔹 Data Processing
+#### 2. Data Processing
 - Cleaned text (removed noise, links, symbols)
 - Applied NLP preprocessing:
   - Tokenization
   - Lemmatization (using spaCy)
 
-#### 🔹 Feature Engineering
+#### 3. Feature Engineering
 - Sentiment analysis using TextBlob
 - Complaint classification using rule-based NLP
 - Feature request detection using keyword logic
 - TF-IDF for extracting important words
 
-#### 🔹 Analytics & Dashboard
+#### 4. Analytics & Dashboard
 - Built interactive dashboards in:
   - **Power BI** (for business insights)
   - **Streamlit** (for web deployment)
 
-#### 🔹 Key KPIs Created
+#### 5. Key KPIs Created
 - Satisfaction Score (NPS-style)
 - Complaint Rate (based on negative sentiment)
 - Bug & Performance Issue %
@@ -186,7 +186,7 @@ To analyze Play Store reviews and extract:
 
 ---
 
-### 📊 Key Insights
+### Key Insights
 
 - Majority of users are **satisfied**, but:
   - Bug and performance issues are dominant complaints  
@@ -196,7 +196,7 @@ To analyze Play Store reviews and extract:
 
 ---
 
-### 💡 Business Impact
+### Business Impact
 
 This system helps:
 - Identify critical product issues  
@@ -206,7 +206,7 @@ This system helps:
 
 ---
 
-### 🚀 Tech Stack
+### Tech Stack
 
 - **Python** (Pandas, NLP)
 - **Streamlit** (Web App)
@@ -215,7 +215,7 @@ This system helps:
 
 ---
 
-### 👨‍💻 Final Outcome
+### Final Outcome
 
 An **end-to-end analytics solution** that converts unstructured user feedback into meaningful product insights and interactive dashboards.
 
